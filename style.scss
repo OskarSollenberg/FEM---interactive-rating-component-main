@@ -1,184 +1,164 @@
-//* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//*
-//*                         VARABLES                          //*
-//* __________________________________________________________//*
-
+/* Placing necessary colours in var(iables) for easier and more consistent work. Instead of changing every colour individually, once the colours are assigned to the target elements, everything can be changed painlessly from here!*/
+//*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*//
+//*                                             VARIABLES                                         *//
+//*_______________________________________________________________________________________________*//
 :root {
-    --clr-orange: hsl(25, 97%, 53%);
-    --clr-white: hsl(0, 0%, 100%);
-    --clr-grey-400: hsl(217, 12%, 15%);
-    --clr-grey-500: hsl(216, 12%, 54%);
-    --clr-blue-800: hsl(213, 19%, 18%);
-    --clr-blue-900: hsl(216, 12%, 8%);
-
-    --fs-paragraph: 15px;
-
-    --fw-400: 400;
-    --fw-700: 700;
+    --white: hsl(0, 0%, 100%);
+    --lightGrey: hsl(217, 12%, 63%);
+    --mediumGrey: hsla(216, 12%, 54%, 0.205);
+    --darkBlue: hsl(213, 19%, 18%);
+    --veryDarkBlue: hsl(216, 12%, 8%);
+    --orange: hsl(25, 97%, 53%);
 }
 
-//* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//*
-//*                         VARIABLES                         //*
-//* __________________________________________________________//*
-//* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//*
-//*                         RESET                             //*
-//* __________________________________________________________//*
+//*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*//
+//*                                             VARIABLES                                         *//
+//*_______________________________________________________________________________________________*//
+//*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*//
+//*                                             RESET                                             *//
+//*_______________________________________________________________________________________________*//
 
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
-button {
-    border-radius: 0;
-    text-align: inherit;
-    background: none;
-    box-shadow: none;
-    padding: 0;
-    cursor: pointer;
-    border: none;
-    color: inherit;
-    font: inherit;
-    color: var(--clr-white);
-}
-img {
-    width: 100%;
-    display: block;
-}
-
-//* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//*
-//*                         RESET                             //*
-//* __________________________________________________________//*
-//* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//*
-//*                         GLOBAL                            //*
-//* __________________________________________________________//*
-body {
-    font-family: "Overpass", sans-serif;
-    background: var(--clr-blue-900);
-}
-h1,
-h2,
-h3 {
-    color: var(--clr-white);
-}
-p {
-    color: var(--clr-grey-500);
-    font-size: var(--fs-paragraph);
-}
-//* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//*
-//*                         RESET                             //*
-//* __________________________________________________________//*
-//* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//*
-//*                         COMPONENTS                        //*
-//* __________________________________________________________//*
-
-main {
-    padding: 1rem;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
-
-.card {
-    height: 23rem;
-    padding: 1.5rem;
-    background: var(--clr-blue-800);
-    display: flex;
-    flex-direction: column;
-    gap: 1.3rem;
-    border-radius: 1rem;
-    max-width: 22rem;
-}
-.card--center {
-    justify-content: center;
-    align-items: center;
-}
-.hidden {
+input[type="radio"] {
     display: none;
 }
 
-//* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//*
-//*                         COMPONENTS                        //*
-//* __________________________________________________________//*
-//* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//*
-//*                         CARD 1                            //*
-//* __________________________________________________________//*
+//*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*//
+//*                                             RESET                                             *//
+//*_______________________________________________________________________________________________*//
+//*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*//
+//*                                             GLOBAL                                            *//
+//*_______________________________________________________________________________________________*//
 
-.img__wrapper {
-    --size: 3rem;
-
-    width: var(--size);
-    height: var(--size);
-    background-color: var(--clr-grey-400);
-    display: grid;
-    place-items: center;
-    border-radius: 100%;
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    font-family: "Overpass", sans-serif;
+    background-color: var(--veryDarkBlue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.card {
+    background-color: var(--darkBlue);
+    width: 90%;
+    padding: 1.5em;
+    border-radius: 1.5em;
+    margin: 2em auto;
+}
+//*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*//
+//*                                             GLOBAL                                            *//
+//*_______________________________________________________________________________________________*//
+//*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*//
+//*                                             CARD 1                                            *//
+//*_______________________________________________________________________________________________*//
 
-.radio-btns {
+.page__unsubmitted {
+    display: block;
+}
+.bg-circle__star {
+    background-color: var(--mediumGrey);
+    border-radius: 50%;
+    padding: 1em;
+}
+.second-heading {
+    margin-bottom: 0.5em;
+    color: var(--white);
+    font-size: 1.6rem;
+}
+.paragraph {
+    line-height: 1.7em;
+    margin-top: 0;
+    font-size: 0.9rem;
+}
+.paragraph,
+.rating__buttons {
+    color: var(--lightGrey);
+}
+.rating__buttons {
     display: flex;
     justify-content: space-between;
+    margin: 1.7em 0;
+    font-weight: bold;
 }
+.rating-btn {
+    cursor: pointer;
+    background-color: var(--mediumGrey);
+    border-radius: 50%;
+    padding: 0.8em 1.2em;
+    font-weight: bold;
 
-.radio-btn,
-.radio__span {
-    --size: 3rem;
-
-    width: var(--size);
-    height: var(--size);
-    background-color: var(--clr-grey-400);
-    border-radius: 100%;
-    display: grid;
-    place-items: center;
-    position: relative;
-    color: white;
-}
-.radio__input {
-    position: absolute;
-    visibility: hidden;
-    z-index: 100;
-
-    &:hover ~ .radio__span {
-        background: var(--clr-orange);
+    &:hover {
+        background-color: var(--lightGrey);
+        color: var(--white);
     }
-    &:checked ~ .radio__span {
-        background: var(--clr-grey-500);
+    &:active {
+        background-color: var(--orange);
+        color: var(--white);
     }
 }
-.radio__span {
-    position: absolute;
+
+/*added class with JS to the selected rating*/
+.selected {
+    background-color: var(--lightGrey);
+    color: var(--white);
 }
 
-.button {
-    background: var(--clr-orange);
+.btn {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--white);
+    background-color: var(--orange);
+    border: none;
     width: 100%;
-    padding: 0.8rem;
-    border-radius: 5rem;
-    text-align: center;
-    outline: none;
+    padding: 1em;
+    border-radius: 2em;
+    display: block;
+    margin: 0 auto;
+    font-weight: bold;
 
-    &:is(:hover, :focus-visible) {
-        background: var(--clr-white);
-        color: var(--clr-orange);
+    &:hover {
+        cursor: pointer;
+    }
+    &:active {
+        background-color: var(--white);
+        color: var(--orange);
     }
 }
 
-//* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//*
-//*                             CARD 1                        //*
-//* __________________________________________________________//*
-//* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//*
-//*                             CARD 2                        //*
-//* __________________________________________________________//*
+//*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*//
+//*                                             CARD 1                                            *//
+//*_______________________________________________________________________________________________*//
+//*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*//
+//*                                             CARD 2                                            *//
+//*_______________________________________________________________________________________________*//
 
-.submit-text {
-    color: var(--clr-orange);
-    background: var(--clr-grey-400);
-    padding: 0.7rem 1rem;
-    border-radius: 10rem;
+.page__submitted {
+    display: none;
+    text-align: center;
+}
+.page__submitted img {
+    margin-bottom: 1em;
+}
+.rating {
+    background-color: var(--mediumGrey);
+    color: var(--orange);
+    border-radius: 1em;
+    padding: 0.4em 1.3em;
+    display: inline-block;
+    margin-bottom: 0.7em;
 }
 
-//* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//*
-//*                             CARD 2                        //*
-//* __________________________________________________________//*
+@media all and (min-width: 500px) {
+    .card {
+        padding: 1.9em;
+        width: 400px;
+    }
+}
+
+//*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*//
+//*                                             CARD 2                                            *//
+//*_______________________________________________________________________________________________*//
