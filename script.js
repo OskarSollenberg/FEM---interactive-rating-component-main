@@ -2,9 +2,9 @@
 const ratingBtn = document.querySelectorAll(".rating-btn");
 const submitBtn = document.querySelector(".btn");
 
-// PAGES
-const page = document.querySelector(".page");
-const pageSubmitted = document.querySelector(".page__submitted");
+// cardS
+const card = document.querySelector(".card");
+const cardSubmitted = document.querySelector(".card--submitted");
 
 // RATING AFTER SUBMITTIONG
 const rating = document.querySelector("#rating");
@@ -35,9 +35,9 @@ for (let i = 0; i < ratingBtn.length; i++) {
                 submitBtn.addEventListener("click", () => {
                     //
                     //
-                    // GO TO SUBMISSION-PAGE
-                    addClass(page, "page--not-visable");
-                    removeClass(pageSubmitted, "page--not-visable");
+                    // GO TO SUBMISSION-card
+                    addClass(card, "card--not-visable");
+                    removeClass(cardSubmitted, "card--not-visable");
                     rating.innerHTML = i + 1;
                 });
             }
