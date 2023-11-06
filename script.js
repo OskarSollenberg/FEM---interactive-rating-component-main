@@ -9,6 +9,7 @@ const pageSubmitted = document.querySelector(".page__submitted");
 // RATING AFTER SUBMITTIONG
 const rating = document.querySelector("#rating");
 
+// COSTUM FUNCTIONS
 addClass = (element, className) => {
     element.classList.add(className);
 };
