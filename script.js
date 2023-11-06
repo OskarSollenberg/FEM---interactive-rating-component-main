@@ -1,16 +1,45 @@
-// const ratingBtn = document.querySelectorAll(".rating-btn");
+// BUTTONS
+const ratingBtn = document.querySelectorAll(".rating-btn");
+const submitBtn = document.querySelector(".btn");
 
-// addClass = (element, className) => {
-//     element.classList.add(className);
-// };
+// PAGES
+const page = document.querySelector(".page");
+const pageSubmitted = document.querySelector(".page__submitted");
 
-// ratingBtn.forEach((btn) => {
-//     btn.addEventListener("click", () => {
-//         addClass(ratingBtn, "selected");
-//     });
-// });
+// RATING AFTER SUBMITTIONG
+const rating = document.querySelector("#rating");
 
-// for (let i = 0; i < ratingBtn.length; i++) {
+addClass = (element, className) => {
+    element.classList.add(className);
+};
+removeClass = (element, className) => {
+    element.classList.remove(className);
+};
 
-//  ratingBtn.forEach((btn) => {
-//         addClass(ratingBtn, "selected");
+for (let i = 0; i < ratingBtn.length; i++) {
+    ratingBtn[i].addEventListener("click", () => {
+        //
+        //
+        // REMOVE CLASS TO PREVOUSLY SELECTED BTN
+        ratingBtn.forEach((btn) => {
+            btn.classList.remove("btn--selected");
+        });
+        //
+        //
+        // ADD CLASS TO ACTIVE BTN
+        addClass(ratingBtn[i], "btn--selected");
+
+        for (let i = 0; i < ratingBtn.length; i++) {
+            if (ratingBtn[i].classList.contains("btn--selected")) {
+                submitBtn.addEventListener("click", () => {
+                    //
+                    //
+                    // GO TO SUBMISSION-PAGE
+                    addClass(page, "page--not-visable");
+                    removeClass(pageSubmitted, "page--not-visable");
+                    rating.innerHTML = i + 1;
+                });
+            }
+        }
+    });
+}

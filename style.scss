@@ -42,6 +42,15 @@ body {
     justify-content: center;
     align-items: center;
 }
+h2 {
+    color: var(--white);
+    font-size: 1.6rem;
+}
+p {
+    line-height: 1.7em;
+    font-size: 0.9rem;
+    color: var(--lightGrey);
+}
 .card {
     background-color: var(--darkBlue);
     width: 90%;
@@ -56,33 +65,17 @@ body {
 //*                                             CARD 1                                            *//
 //*_______________________________________________________________________________________________*//
 
-.page__unsubmitted {
-    display: block;
-}
-.bg-circle__star {
+.bg__star {
     background-color: var(--mediumGrey);
     border-radius: 50%;
     padding: 1em;
-}
-.second-heading {
-    margin-bottom: 0.5em;
-    color: var(--white);
-    font-size: 1.6rem;
-}
-.paragraph {
-    line-height: 1.7em;
-    margin-top: 0;
-    font-size: 0.9rem;
-}
-.paragraph,
-.rating__buttons {
-    color: var(--lightGrey);
 }
 .rating__buttons {
     display: flex;
     justify-content: space-between;
     margin: 1.7em 0;
     font-weight: bold;
+    color: var(--lightGrey);
 }
 .rating-btn {
     cursor: pointer;
@@ -102,7 +95,7 @@ body {
 }
 
 /*added class with JS to the selected rating*/
-.selected {
+.btn--selected {
     background-color: var(--lightGrey);
     color: var(--white);
 }
@@ -136,12 +129,12 @@ body {
 //*                                             CARD 2                                            *//
 //*_______________________________________________________________________________________________*//
 
-.page__submitted {
+.page--not-visable {
     display: none;
-    text-align: center;
 }
-.page__submitted img {
-    margin-bottom: 1em;
+
+.page__submitted {
+    text-align: center;
 }
 .rating {
     background-color: var(--mediumGrey);

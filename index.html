@@ -18,57 +18,53 @@
     <body>
         <main>
             <div class="card">
-                <div class="page__unsubmitted">
+                <div class="page">
                     <span
                         ><img
                             src="images/icon-star.svg"
                             alt="star"
-                            class="bg-circle__star"
+                            class="bg__star"
                     /></span>
-                    <h2 class="second-heading">How did we do?</h2>
-                    <p class="paragraph">
+                    <h2>How did we do?</h2>
+                    <p>
                         Please let us know how we did with your support request.
                         All feedback is appreciated to help us improve our
                         offering!
                     </p>
                     <div class="rating__buttons">
                         <div class="rating-btn">
-                            <input type="radio" id="1" name="1" value="1" />
-                            <label for="1">1</label>
+                            <input type="radio" />
+                            <label>1</label>
                         </div>
 
                         <div class="rating-btn">
-                            <input type="radio" id="2" name="2" value="2" />
-                            <label for="2">2</label>
+                            <input type="radio" />
+                            <label>2</label>
                         </div>
 
                         <div class="rating-btn">
-                            <input type="radio" id="3" name="3" value="3" />
-                            <label for="3">3</label>
+                            <input type="radio" />
+                            <label>3</label>
                         </div>
 
                         <div class="rating-btn">
-                            <input type="radio" id="4" name="4" value="4" />
-                            <label for="4">4</label>
+                            <input type="radio" />
+                            <label>4</label>
                         </div>
 
                         <div class="rating-btn">
-                            <input type="radio" id="5" name="5" value="5" />
-                            <label for="5">5</label>
+                            <input type="radio" />
+                            <label>5</label>
                         </div>
                     </div>
-                    <button class="btn" type="submit" id="btn">Submit</button>
-                    <!--ID is added so we can detect the element on the page and listen for clicks-->
+                    <button class="btn" type="submit">Submit</button>
                 </div>
 
-                <div class="page__submitted">
-                    <!--Display property is set on none. After the user chooses the rating and clicks the subtmit button, display is then set on block while the other on none-->
+                <div class="page__submitted page--not-visable">
                     <img
                         src="images/illustration-thank-you.svg"
                         alt="thank you"
                     />
-
-                    <!--span ID added so we can later insert the user selected value in this field-->
                     <div>
                         <span class="rating"
                             >You selected <span id="rating"></span> out of
@@ -76,8 +72,8 @@
                         >
                     </div>
 
-                    <h2 class="second-heading">Thank you!</h2>
-                    <p class="paragraph">
+                    <h2>Thank you!</h2>
+                    <p>
                         We appreciate you taking the time to give a rating. If
                         you ever need more support, don’t hesitate to get in
                         touch!
