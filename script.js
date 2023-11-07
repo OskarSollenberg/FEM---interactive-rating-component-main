@@ -3,8 +3,10 @@ const ratingBtn = document.querySelectorAll(".rating-btn");
 const submitBtn = document.querySelector(".btn");
 
 // cardS
-const card = document.querySelector(".card");
-const cardSubmitted = document.querySelector(".card--submitted");
+const contentPageUnsubmitted = document.querySelector(
+    ".content-page__unsubmitted"
+);
+const contentPageSubmitted = document.querySelector(".content-page__submitted");
 
 // RATING AFTER SUBMITTIONG
 const rating = document.querySelector("#rating");
@@ -36,8 +38,8 @@ for (let i = 0; i < ratingBtn.length; i++) {
                     //
                     //
                     // GO TO SUBMISSION-card
-                    addClass(card, "card--not-visable");
-                    removeClass(cardSubmitted, "card--not-visable");
+                    addClass(contentPageUnsubmitted, "is--not-visable");
+                    removeClass(contentPageSubmitted, "is--not-visable");
                     rating.innerHTML = i + 1;
                 });
             }
