@@ -98,14 +98,14 @@ main {
     justify-content: center;
     background-color: var(--darkBlue);
     border-radius: 1rem;
-    padding: 1.7rem 0rem;
+    padding: 1.7rem;
     width: 24rem;
     height: 22rem;
 
     @media (min-width: 30rem) {
         border-radius: 2rem;
         width: 28rem;
-        height: 29rem;
+        height: 28rem;
         padding: 2rem;
     }
 }
@@ -144,7 +144,7 @@ main {
     display: grid;
     place-items: center;
 
-    @media (min-width: 20rem) {
+    @media (min-width: 21rem) {
         width: 3rem;
     }
     @media (min-width: 30rem) {
@@ -162,6 +162,7 @@ main {
 }
 
 .content-page__submitted {
+    padding: 1.7rem;
     text-align: center;
     align-items: center;
 }
